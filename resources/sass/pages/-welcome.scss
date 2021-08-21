@@ -1,0 +1,329 @@
+
+.antialiased{
+    position: relative;
+
+    // carousel start
+    .main-slider{
+        margin: 50px 0;
+        width:100%;
+        .mid-slider{
+            border: 1px solid #0303;
+            height: 480px;
+            padding: 0 20px;
+            margin-top: -10px;
+            @include respond(phone){
+                height: 350px;
+            }
+            .slider-content{
+                .name{
+                    padding-top: 80px;
+                    color:$color-dark;
+                    @include respond(phone){
+                        padding-top: 0px;
+                    }
+                    a{
+                        text-transform: capitalize;
+                        font-size: 16px;
+                        font-weight: 400;
+                        color:$color-dark;
+                        @include respond(phone){ 
+                            font-size: 14px;
+                            font-weight: 300;
+                            letter-spacing: 1px;
+                        }
+                        &:hover{
+                            text-decoration: none;
+                        }  
+                    }
+                    .price{
+                        margin-top: 20px;
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: #0062cc;
+
+                        span{
+                            font-size: 18px;
+                        }
+                        @include respond(phone){
+                            margin-top: 10px;
+                            span{
+                                font-size: 14px;
+                            } 
+                        }
+                        .old{
+                            color:red;
+                            margin-left: 10px;
+                            text-decoration: line-through;
+                            font-size: 14px;
+                            @include respond(phone){
+                                margin-left: 3px;
+                                font-size: 14px;
+                                font-weight: 300;
+                                
+                            }
+
+                        }
+                        .brand{
+                           
+                            font-size: 18px;
+                            color: $color-dark;
+                            text-transform: uppercase;
+                            margin: 5px 0 ;
+                            @include respond(phone){
+                                font-size: 12px;
+                                font-weight: 100;
+                                letter-spacing: 1px;
+                            }
+                           
+                        }
+                     
+                    }
+                }
+            
+            }
+            .product-link{
+                a{
+                    
+                    img{
+                        width: 500px;
+                        height:350px;
+                        display: block;
+
+                        @include respond(phone){
+                            width:300px;
+                            height:250px;
+                            overflow: visible;
+                        }
+                        
+                    }
+                }
+                
+            }
+        }
+        .btn{ 
+            text-transform: uppercase;
+            font-size: 18px;
+            width: 100%;
+            background-color: #f4b41a;
+            margin-top: 30px;
+            letter-spacing: 3px;
+            padding: 10px;
+            transition: all .3s linear;
+
+            &:hover{
+                background-color: #333300;
+                color:#f4b41a;
+                border: 1px solid #f4b41a;
+            }
+        }
+
+        @include respond (tablet){
+            
+        }
+    }
+    // carousel end
+
+
+     //shop by Brand
+     .shop-by-category{
+        position: relative;
+        border: 1px solid #0303;
+        width: 100%;
+        color: #fff;
+        margin-top: 100px;
+        width:100%;
+        h3{
+            position: absolute;
+            top: 40;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color:#f4b41a;
+            padding: 30px 0 80px 0;
+            font-weight: 700;
+            font-size: 20px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+
+            @include respond(phone){
+                font-weight: 400;
+                font-size: 16px;
+                letter-spacing:1px;
+            }
+            @include respond(tablet){
+                font-weight: 400;
+                font-size: 16px;
+                letter-spacing:1px;
+            }
+        }
+        .carousel-category{
+            padding: 30px 15px;
+            .item{
+                width:200px;
+                height:200px;
+                margin-left: 10px;
+                border-radius: 50%;
+
+                a{  
+                    text-decoration: none;
+                    color:black;
+                    font-size: 16px;
+                    width:100%;
+                    padding: 20px 15px; 
+                }
+
+                img{
+                    width: 150px;
+                    height:150px;
+                    border-radius: 50%;
+                }
+                .category{
+                    position:absolute;
+                    top: 30%;
+                    &:hover{
+                        color: #886921;
+                    }
+                }
+
+            }
+            
+            
+          
+        }
+    }
+    //End  shop by brand 
+    
+    
+    //Top  Product slider
+
+    .product-slider{
+        margin-top: 20px;
+        background-color: #f7f7f7;
+        width:100%;
+        .content-header{
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 800;
+            h3{
+                text-align: center;
+                color:#a07718;
+                font-weight: 700;
+                font-size: 20px;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+
+                @include respond(phone){
+                    text-align: left;
+                    font-weight: 300;
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                }
+            }
+            a{
+                font-size: 14px;
+                letter-spacing: 2px;
+                text-transform: capitalize;
+                margin: -30px 30px 0 0;
+                color: #ca0815;
+            }
+        }
+
+
+    }
+
+
+     //owl carousel deals of month
+    
+     .deal{
+        position: relative;
+        margin-top: 100px;
+        width:100%;
+        .deal-header{
+            position: absolute;
+            top: 15;
+            left: 50%;
+            transform: translate(-40%, -40%);
+            color:#f4b41a;
+            padding: 30px 0 80px 0;
+            margin-bottom: 50px;
+            font-weight: 700;
+            font-size: 20px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+
+            @include respond(phone){
+                font-weight: 400;
+                font-size: 16px;
+                letter-spacing:1px;
+            }
+            @include respond(tablet){
+                font-weight: 400;
+                font-size: 16px;
+                letter-spacing:1px;
+            }
+        }
+        .float-right{
+            margin-left: 20px;
+            margin-top:-30px;
+            span{
+                color: #ca0815;
+                font-weight: 400;
+                font-size: 14px;
+            }        
+        }
+        .owl-carousel{
+            padding: 30px 20px;
+            .item{
+                margin: 10px 20px;
+                .product-bottom{
+                    h3{
+                        color:black;
+                        padding: 5px 10px;
+                    }
+                }
+               
+            }
+            .owl-prev{
+                background-color: #0062cc !important;
+                color: #fff;
+            }
+            .owl-next{
+                background-color: #0062cc !important;
+                color: #fff;
+            }
+        }
+    }
+    // deals of month
+
+    // {{-- Future and hot product section Start --}}
+    .future-content{
+        width:100%;
+        margin-top:20px;
+        letter-spacing: 1px;
+        h2{
+            position: relative;
+            background-color: #0062cc;
+            color:#fff;
+            font-size: 24px;
+            padding: 5px 10px;
+            margin-left: 20px;
+            cursor: pointer;
+            @include respond (phone)
+            {
+                font-size: 14px;
+                margin-left: 10px;
+            }
+            &:hover{
+                color:black;
+            }
+           
+        }
+        
+    }
+    // {{-- End  Future and hot product section Start --}}
+
+
+   
+
+   
+  
+}

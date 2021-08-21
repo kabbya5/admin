@@ -1,0 +1,55 @@
+.usercart{  
+    background-color: #f7f7f7;
+    h4{
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 25px;
+    }
+    .cart-table{
+        background-color: #ffffff;
+        th{
+            background-color:#f7f7f7;
+            padding: 5px;
+            .img_div{
+                text-align: center;
+                img{
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    border: 1px solid #ff5c23;
+                
+                }
+                
+            }
+            .name{
+                .product-name{
+                    color: #000;
+                    font-size: 14px;
+                    text-transform: capitalize;
+                    letter-spacing: 2px;
+                    font-weight: 300;
+                    
+                    @include respond(tablet){
+                        display: none;
+                    }
+                }
+                .fas{
+                    color:rgb(206, 11, 11);
+                    font-size: 25px;
+                }             
+            }
+        }
+        .qty,.price,.total{
+            font-size: 25px;
+            color:#ff5c23;
+            font-weight: 600;
+
+            @include respond (laptop){
+                font-size: 18px;
+                font-weight: 200;
+            }
+        }
+    
+    }
+}

@@ -1,0 +1,116 @@
+.header_nav{
+    width:100%;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    .navbar-brand{
+        margin-left:20px;
+        font-size:20px;
+        letter-spacing: 3px !important;
+        text-transform: capitalize !important;
+        font-weight: 700;
+        transition:color 0.2s linear;
+        &:hover{
+            text-decoration: none;
+            color:rgb(168, 97, 9);
+        }
+        @include respond(phone){
+            margin-left: 20px;
+        }
+        @include respond(phone){
+            font-weight: 200;
+            letter-spacing: 1px;
+            font-size: 16px;
+            top:10px;
+          
+        }
+        @include respond(tablet){
+            font-weight: 200;
+            letter-spacing: 1px;
+            top:10px;   
+        }
+        @include respond(laptop){
+            font-weight: 300;
+            font-size: 16px;
+            letter-spacing: 3px;
+            top:14px;
+          
+        }
+    }
+    .navbar-collapse{
+        text-align: center;
+        .navbar-nav{
+            li{
+                & .active{
+                    color:$color-primary !important;
+                }
+                a{
+                    color:$color-dark !important;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                        &:hover{  
+                        color:$color-primary !important; 
+                    }
+                }
+            }
+            .dropdown{
+                .dropdown-menu{
+                    min-width: max-content;
+                    a{
+                        color:#fff !important;
+                        background-color: #0c6d8a; 
+                           
+                        
+                    }
+                    .dropdown-submenu{
+                        list-style: none;
+                        margin-left: -10px;
+                        .sub-link{
+                            color:#66311e !important;
+                            background-color:#fff;
+                            transition: color 0.2s linear;
+                            &:hover{
+                                color:#ff5c23 !important;
+                            }
+                        }
+                    }
+
+                }
+            }        
+        }
+        form{
+            margin: 0 50px;
+            padding: 5px;
+            
+            @include respond(laptop){
+                margin: 0 10px;
+            }
+            
+            @include respond(phone){
+                margin: 10px 10px;
+                padding-left: 20px;
+
+            }
+               
+            input{
+                font-size: 16px; 
+                @include respond(phone){
+                    width:80%;
+                    font-size: 14px;               
+                }
+                @include respond(laptop){
+                    width: 150px;
+                    height: 30px;
+                }
+            }
+            button{
+                font-size: 16px;
+                @include respond(phone){
+                    font-size: 14px;                    
+                }
+                @include respond(laptop){
+                    font-size: 12px;
+                    height:30px ;
+                }
+            }
+        }
+    }     
+}

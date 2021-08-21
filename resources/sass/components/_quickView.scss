@@ -1,0 +1,66 @@
+.quickview{
+    .modal-header{
+        .modal-title{
+            text-transform: capitalize;
+            letter-spacing: 3px;
+            font-size: 18px;
+            color: #ff5c23;
+            font-weight: 300;
+            margin-left: 20px;
+        }
+        button{
+            color:red;
+        }
+    }
+    .modal-body{
+        .row{
+            background-color: #fff;
+            .img-section{
+                .carousel-indicators{
+                    li{
+                        width: 15px;
+                        height: 3px;
+                        border-radius: 50%;
+                        background: #a3654e;
+                    }
+                    .active{
+                        background: #ff5c23; 
+                    }
+                }
+            }
+            .price-section{
+                #selling-price{
+                    text-decoration: line-through;
+                }
+            }
+            .input-section{
+                .form-group{
+                    label{
+                        font-size: 16px;
+                        color:#0c6d8a;
+                        font-weight: 300;
+                        line-height: 12px;
+                    }
+                    .form-control{
+                        border:0;
+                        border-bottom: 1px solid #0c6d8a;
+                    }
+                }
+                .btn{
+                    width:100%;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    color:white;
+                    background-color: #0c6d8a;
+                    transition:all .5s linear;
+                    &:hover{
+                        background-color: white;
+                        color: #0c6d8a;
+                        border: 1px silid #0c6d8a;
+                    }
+                }
+            }
+        }
+       
+    }
+}

@@ -1,0 +1,147 @@
+.contact{       
+    background-color: #f7f7f7;
+    margin-top: 25px;
+    .contact-header{
+          
+        .contact-header-text{
+            position:relative;
+            height:100px;
+            background-color: #ffffff;
+            padding: 15px 5px 10px 10px;
+            @include respond(tablet){
+                height:130px;
+            }
+            small{
+                position: absolute;
+                left:50%;
+                transform: translate(-50%);
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 24px;
+                margin-bottom: 15px;
+                color: #fff;
+                background: #101010;
+                display: inline-block;
+                padding: 3px 18px;
+                text-transform: uppercase;
+            }
+            p{
+               margin-top:35px;
+               font-weight: 700;
+               font-size: 16px;
+               color:#4d4d4d;
+               
+            }
+        }
+        .address{
+
+            margin: 100px 0px 30px 10px;
+
+            @include respond (tablet){
+                margin: 20px 0px;
+            }
+
+            .d-flex{
+                margin-bottom: 20px;
+                .icon{
+                    width: 60px;
+                    height:60px;
+                    border-radius: 50%;
+                    border: 1px solid $cyan;
+                    
+                    i{
+                        font-size: 40px;
+                        text-align: center;
+                        margin-left: 15px;
+                        margin-top: 10px;
+                        color:#001541;
+                    }
+                }
+                .contact-info{
+                    h6{
+                        color:#ff5c23;
+                        margin-top: 10px;
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 3px;
+                    }
+                    span{
+                        font-size: 16px;
+                        font-weight: 200;
+                    }
+                }
+            }
+            
+        }
+        .contact-form{
+            background-color: #ffffff;
+            .form-header{
+                position:relative;
+                height:100px;
+                background-color: #ffffff;
+                padding: 15px 5px 10px 10px;
+                @include respond(tablet){
+                    height:130px;
+                }
+                small{
+                    position: absolute;
+                    left:50%;
+                    transform: translate(-50%);
+                    font-size: 14px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    margin-bottom: 15px;
+                    color: #fff;
+                    background-color:#ff5c23;
+                    display: inline-block;
+                    padding: 3px 18px;
+                    text-transform: uppercase;
+                }
+                h2{
+                    margin-top:35px;
+                    font-weight: 700;
+                    
+                    color:#4d4d4d;
+
+                    span{
+                        font-size: 30px;
+                        color: #101010;
+                        box-sizing: border-box;
+                        font-weight: 700;
+                        line-height: 36px;
+                    }
+                    
+                 }
+            }
+            form{
+                .form-group{
+                    .form-control{
+                        border: 0;
+                        border-bottom: 1px solid #d3d3d3;
+                        padding-left: 0;
+                        color: #000;
+                        border-radius: 0;
+                    }
+                }
+                .btn{
+                    width:100%;
+                    background-color: #ff5c23;
+                    text-align: center;
+                    border: 0;
+                    font-weight: 700;
+                    font-size: 18px;
+                    height: 45px;
+                    line-height: 19px;
+                    margin-top: 0;
+                    transition: all 0.3s linear;
+                    margin-bottom: 20px;
+                    &:hover{
+                        background-color: #ffffff;
+                        color:#ff5c23;
+                        border: 1px solid #ff5c23;
+                    }
+                }
+            }
+        }
+    }
+}

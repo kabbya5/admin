@@ -1,0 +1,174 @@
+.product-details{
+    background-color: #f7f7f7;
+    padding:10px 0px;  
+    @media (min-width:1200px){
+        padding: 0 10%;
+    }
+    .img-section{
+        #carouselExampleIndicators  {
+            border: 1px solid rgb(66, 65, 65); 
+            .carousel-indicators{
+                display:block;
+                top: 0;                 
+                margin-left: 0;
+                width: 90px;
+                height:100%;
+                border: 1px solid rgb(66, 65, 65); 
+                li{
+                    background: none;
+                    text-indent: 0;
+                    box-sizing: border-box;
+                    margin-top:15px;
+                    width: 70px;
+                    height: 70px;
+                    margin-left: 5px;
+                    z-index: 1;
+                    &:hover{
+                        border-radius: 50%;
+                        border: 2px solid #27b9c1;
+                        transition: all .3s linear;
+                        img{
+                            border-radius: 50%;
+                            object-fit: cover;
+                            width: 67px;
+                            height: 65px; 
+                            opacity: 1;
+                        }
+                    }               
+                    img{    
+                        border-radius: 50%;
+                        object-fit: cover;
+                        width: 67px;
+                        height: 65px; 
+                        opacity: 1;                           
+                        transition: opacity 0.6s ease;                      
+                    }                                                                     
+                }
+                .active{
+                    border-radius: 50%;
+                    border: 2px solid #27b9c1;
+                    transition: all .3s linear;
+                    img{
+                        border-radius: 50%;
+                        object-fit: cover;
+                        width: 67px;
+                        height: 65px;                                
+                    }
+                }                    
+            }
+    
+            .carousel-inner{
+                margin: 30px 2% 30px 30%;
+                width:300px;
+                height:300px;
+                box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+              
+            }
+        } 
+        
+ 
+       
+    }
+    .link{
+        padding-top: 10px;
+        background-color: #ffffff;
+        border-bottom:1px solid #333;
+        a{
+            text-transform: capitalize;
+            margin-left: 10px;
+            color:$cyan;
+            &:hover{
+                color:#18a4ac;
+                transition: all 0.3s;
+            }
+        }
+    }
+    .name{
+        margin-left: -12px;
+        margin-top: 15px;
+        padding:15px;
+        background-color: #ffffff;
+        span{
+            color:#000;
+            font-weight: 400;
+        }
+    }
+    .product-form{
+        .btn{
+            width:100%;
+            background-color: #ff5c23;
+            text-align: center;
+            border: 0;
+            color:#ffffff;
+            font-weight: 700;
+            font-size: 18px;
+            text-transform: capitalize;
+            height: 45px;
+            line-height: 19px;
+            margin-top: 0;
+            transition: all 0.3s linear;
+            margin-bottom: 20px;
+            &:hover{
+                background-color: #ffffff;
+                color:#ff5c23;
+                border: 1px solid #ff5c23;
+            }
+        }
+    }
+
+
+
+    .product-footer{
+        .nav-link{
+            color:$cyan !important;
+            font-size: 14px;
+            text-transform:capitalize;
+        }
+        .tab-content{
+            .commentform-area{
+                padding:10px;
+                .col-8{
+                    background-color: #ffffff;
+                    padding: 10px 10px 0px 10px;
+                }
+            }
+            .comment{
+                background-color: #ffffff;
+                .comment-list {
+                    padding: 15px 20px;
+                }
+                .thumb{
+                    .img{
+                        width:60px;
+                        height:60px;
+                        border-radius: 50% ;
+                        border: 1px solid $cyan;
+                    }
+                }
+                .desc{
+                    margin-left: 30px;
+                    .text-info{
+
+                        span{
+                            color:#000;
+                            font-size: 14px;
+                        }
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                }
+              
+                .reply-form{
+                    display: none;
+                    transition: all 0.3s linear;
+
+                }
+            }
+        }
+    }
+    
+}
+       
+
+    

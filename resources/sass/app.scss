@@ -1,0 +1,45 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+
+
+// media query
+@import "mixin/mediaQueries.scss";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// component
+@import "components/header";
+@import "components/navbar";
+@import "components/sidebar";
+@import "components/product";
+@import "components/quickView";
+@import "components/footer";
+
+
+//Pages
+@import "pages/-welcome.scss";
+@import "pages/home";
+@import "pages/product_details";
+@import "pages/contact";
+@import "pages/cart";
+@import "pages/subcat_product";
+
+//user_profile
+@import "pages/edit_profile";
+@import "pages/-wishlist.scss";
+
+// Admin product create input
+@import "pages/create_product";
+
+
+
+
+
+
+
+

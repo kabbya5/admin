@@ -1,0 +1,53 @@
+.profile-section{
+    background-color: #f7f7f7;
+    padding: 50px 10px;
+    width:100%;
+    .content{
+        background-color: #ffffff;
+        padding: 40px;
+        box-shadow: 0 2px 3px #979191 ;
+        width:100%;
+        
+        .profile-content{ 
+            .text-center{
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                font-family: "MS Sans Serif, Geneva, sans-serif";
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 45px;
+                color: #222222;
+            } 
+            .text{
+                color:rgb(24, 24, 136);
+                line-height: 35px;
+                span{
+                    margin-left: 10px;
+                    color: #222222;
+                }
+                .list-group{
+                    margin-top: 20px;
+                   
+                }
+
+            } 
+
+            .profile-img{
+                img{
+                    margin: 10px 20px;
+                    object-fit: cover;
+                }
+                ul{
+                    li{
+
+                        font-size: 16px;
+                        &:hover{
+                            text-decoration: none;
+                        }
+                    }
+                }
+                
+            }   
+        }
+    }
+}

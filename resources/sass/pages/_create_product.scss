@@ -1,0 +1,62 @@
+.product-create{
+    .card{
+        .card-header{
+            background-color: $cyan;
+            width: 100%;
+            height: auto;
+            h4{
+                color: #ffffff !important;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            a{
+                color:#ff5c23;
+                text-transform: capitalize;
+                transition: all 0.3s linear;
+                &:hover{
+                    color:white;
+                    text-decoration: none;    
+                }
+            }
+        }
+        .card-body{
+            form{
+                .row{
+                    background-color: #ffffff;
+                    hr{
+                        background-color: #ff5c23;
+                        width:2px;
+                        margin: 20px 0px;
+                        width:100%;
+                    }
+                    .form-lable{
+                        font-family: "Nunito", sans-serif;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 1.6;
+                        color: #212529;
+                        text-align: left;
+                    }
+                    .form-control{
+                        height:40px;
+                        font-size:18px;
+                        option{
+                            font-size: 18px;
+                        }
+                    }
+                    .pd{
+                        height: 100%;
+                    }
+                    .form-check-input{
+                        width:15px;
+                        height:15px;
+                    }
+                    .form-check-lable{
+                        font-size: 18px;
+                    }
+                }
+               
+            }
+        }
+    }
+}

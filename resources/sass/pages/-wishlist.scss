@@ -1,0 +1,41 @@
+.wishlist-product{ 
+    .container{
+        table{
+            
+            tr{
+                th{
+                    text-align: center;
+                    font-size: 15px;
+                    color:#ff5c23;
+                    font-weight: 700; 
+                }
+                .product{
+                    width: 100px;
+                }
+                .name{
+                    width: 300px;
+                }
+                .action{
+                    width:100px;
+                }
+            }
+        
+        
+            td{
+                img{
+                    width:70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    border: 1px solid $cyan;
+                }
+                span{
+                    text-align: center;
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+            }
+            
+        }   
+    }
+}
+
