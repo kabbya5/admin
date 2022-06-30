@@ -7,8 +7,10 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Order;
 use App\Models\Product;
+use Auth;
 
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Hash;
 
 class UserRoleController extends Controller
 {
@@ -107,4 +109,64 @@ class UserRoleController extends Controller
         $admins = User::where('role_id', 1)->paginate(15);
         return view('admin.user_role.all_admin',compact('admins'));
     }
+
+    public function deactiveUser($id){
+        $user = User::find($id);
+        $user->update([
+            'deactive' => ($user->deactive == 1) ? 0 : 1
+        ]);
+
+        $notification = array(
+            'messege' =>  'Successfully Update User Role',
+            'alert-type' => 'success'
+        );
+       
+        return back()->with($notification);
+    }
+
+    public function makeBestSeller($id){
+        $user = User::find($id);
+
+        $user->update([
+            'best_seller' => ($user->best_seller == 1) ? 0 : 1
+        ]);
+        $notification = array(
+            'messege' =>  'Successfully Update User Role',
+            'alert-type' => 'success'
+        );
+       
+        return back()->with($notification);
+    }
+
+    public function changePassword(Request $request,$id){
+        $user = User::find($id);
+        
+        $newpass=$request->password;
+        $confirm=$request->password_confirmation;
+        
+        if ($newpass === $confirm) {
+            $user->password=Hash::make($request->password);
+            $user->save();
+            Auth::setUser($user);
+            Auth::logout();  
+            
+            $notification=array(
+            'messege'=>'Password Changed Successfully ! Now Login with Your New Password',
+            'alert-type'=>'success'
+            );
+            return Redirect()->back()->with($notification); 
+        }
+        else{
+
+            $notification=array(
+            'messege'=>'New password and Confirm Password not matched!',
+            'alert-type'=>'error'
+            );
+            return Redirect()->back()->with($notification);
+                 
+        }     
+        
+    }
+
 }
+
